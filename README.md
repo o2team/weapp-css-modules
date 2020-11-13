@@ -140,7 +140,7 @@ gulp.task('css-module', () => {
 
 ## 参考示例
 
-- [gulp项目示例]('https://github.com/o2team/weapp-css-modules/tree/main/demo/gulp-project-demo')
+- gulp项目：路径 `/demo/gulp-project-demo`
 
 ## 联系反馈
 
