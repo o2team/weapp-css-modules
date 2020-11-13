@@ -1,0 +1,49 @@
+
+.banner {
+    position: relative;
+    overflow: hidden;
+    height: 100px;
+    width: 350px;
+    margin: 50px auto;
+    &__swiper {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 5px;
+      &-img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        border-radius: 5px;
+      }
+    }
+  
+    &__dots {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 5px;
+      height: 4px;
+      text-align: center;
+      font-size: 0;
+      z-index: 1;
+    }
+  
+    &__dot {
+      display: inline-block;
+      margin: 0 2px;
+      width: 4px;
+      height: 4px;
+      border-radius: 4px;
+      opacity: 0.5;
+      background: #FFF;
+      transition: all 0.2s;
+      &--cur {
+        width: 16px;
+        background: #FFF;
+        opacity: 1;
+      }
+    }
+}

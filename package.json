@@ -1,0 +1,43 @@
+{
+  "name": "weapp-css-modules",
+  "version": "0.1.0",
+  "description": "css-modules for weapp",
+  "main": "lib/gulp/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "css-modules",
+    "weapp",
+    "wxapp"
+  ],
+  "author": "Silencesnow",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/core": "^7.12.3",
+    "@babel/plugin-proposal-decorators": "^7.12.1",
+    "@babel/plugin-proposal-object-rest-spread": "^7.12.1",
+    "@babel/plugin-syntax-jsx": "^7.12.1",
+    "babel-generator": "^6.26.1",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-traverse": "^6.26.0",
+    "babel-types": "^6.26.0",
+    "colors": "^1.4.0",
+    "fs-extra": "^9.0.1",
+    "himalaya-walk": "^1.0.0",
+    "himalaya-wxml": "^1.1.0",
+    "lodash": "^4.17.20",
+    "postcss-modules": "^3.2.2",
+    "postcss-scss": "^3.0.4",
+    "through2": "^4.0.2"
+  },
+  "devDependencies": {
+    "eslint": "^7.13.0",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-if": "^3.0.0",
+    "gulp-order": "^1.2.0",
+    "gulp-postcss": "^9.0.0",
+    "gulp-sort": "^2.0.0"
+  }
+}

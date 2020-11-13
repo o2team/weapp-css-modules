@@ -1,0 +1,6 @@
+<!--index.wxml-->
+<view class="container">
+  <child1 />
+  <child2 />
+  <text class="user-motto">hello,weapp-css-module</text>
+</view>

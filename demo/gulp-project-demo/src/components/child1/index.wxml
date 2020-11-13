@@ -1,0 +1,15 @@
+<view class="{{styles.banner}}" wx:if="{{!!list.length}}">
+    <swiper class="{{styles['banner__swiper']}}" indicator-dots="{{false}}" current="{{current}}" autoplay circular
+        bindchange="onSwiperChange">
+        <swiper-item class="{{styles['banner__swiper-item']}}" wx:for="{{list}}" wx:key="key">
+            <image class="{{styles['banner__swiper-img']}}" src="{{item.img}}"></image>
+        </swiper-item>
+    </swiper>
+    <block wx:if="{{list.length > 1}}">
+        <view class="{{styles['banner__dots']}}">
+            <view wx:key="banner"
+                class="{{styles['banner__dot'] + (index == swiperCurrent ? styles['banner__dot--cur'] : '')}}"
+                wx:for="{{list}}" />
+        </view>
+    </block>
+</view>
