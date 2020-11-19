@@ -32,15 +32,15 @@ let style = {}
 ```
 
 ## 安装
-目前只开发了适用于使用 gulp 编译小程序的 gulp 插件，其他场景还未适配
+目前只开发了适用于使用 gulp 编译小程序的 gulp 插件，后续计划开发 webpack 可用的插件实现相同功能
 
 ```
-npm i weapp-css-modules gulp-sort
+npm i gulp-weapp-css-modules gulp-sort
 ```
 
 ```
 // gulpfile.js
-const { weappCssModule, wcmSortFn } = require('weapp-css-modules')
+const { weappCssModule, wcmSortFn } = require('gulp-weapp-css-modules')
 const sort = require('gulp-sort');
 
 gulp.task('css-module', () => {
@@ -53,7 +53,7 @@ gulp.task('css-module', () => {
 
 ## 使用
 
-小程序页面不具备隔离功能，只有具备样式隔离的 Component 可以改造使用 weapp-css-modules
+小程序页面不具备隔离功能，因此只有具备样式隔离的 Component 可以改造使用 weapp-css-modules
 
 1. css 文件改名字: weapp-css-modules 通过 css 文件是否带 module 来识别需要替换的内容
 

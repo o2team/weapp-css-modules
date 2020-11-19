@@ -5,7 +5,7 @@ const del = require('del');
 const gulpif = require('gulp-if');
 const sort = require('gulp-sort');
 
-const { weappCssModule, wcmSortFn } = require('weapp-css-modules')
+const { weappCssModule, wcmSortFn } = require('gulp-weapp-css-modules')
 
 
 
